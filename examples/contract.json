@@ -1,0 +1,1 @@
+{"expected_columns": {"event_id": "long", "user_id": "long", "event_type": "string", "amount": "double", "event_date": "string", "event_time": "timestamp"}, "required_columns": ["event_id", "event_time"], "max_null_rate": {"amount": 0.05, "event_id": 0.0}, "unique_columns": ["event_id"], "min_rows": 1, "freshness": {"column": "event_time", "max_age_seconds": 7200}}

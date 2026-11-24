@@ -1,0 +1,39 @@
+{
+  "scale": {
+    "rows": 30000,
+    "ingest_files": 60,
+    "target_file_bytes": 262144,
+    "seed": 42,
+    "repeats_median_of": 5,
+    "note": "local temp dir, synthetic data \u2014 illustrative, not a cluster benchmark"
+  },
+  "before": {
+    "files": 60,
+    "bytes": 786464,
+    "median_read_s": 0.12266
+  },
+  "after": {
+    "files": 4,
+    "bytes": 521879,
+    "median_read_s": 0.008417
+  },
+  "compaction": {
+    "before_files": 60,
+    "after_files": 4,
+    "before_bytes": 786464,
+    "after_bytes": 521879,
+    "rows": 30000,
+    "groups_rewritten": 3,
+    "file_reduction_ratio": 15.0,
+    "files_to_rewrite": 59
+  },
+  "file_reduction_ratio": 15.0,
+  "read_speedup_x": 14.572,
+  "rows_preserved": true,
+  "contract": {
+    "passed": true,
+    "pass_rate": 1.0,
+    "checks": 13,
+    "failed": []
+  }
+}
